@@ -20,6 +20,7 @@ int main() {
     int Turismo2 = 15;
 
     //Exibir Carta 1
+    printf("Carta1\n");
     printf("Código: %s\n", Código1);
     printf("Estado: %s\n", Estado1);
     printf("Cidade: %s\n", Cidade1);
@@ -27,8 +28,10 @@ int main() {
     printf("Área: %.fkm²\n", Área1);
     printf("PIB: %.f Bilhões\n", PIB1);
     printf("Números de Pontos Turísticos: %d\n", Turismo1);
+    printf("\n");
     
     //Exibir Carta 2 
+    printf("Carta2\n");
     printf("Código: %s\n", Código2);
     printf("Estado: %s\n", Estado2);
     printf("Cidade: %s\n", Cidade2);
