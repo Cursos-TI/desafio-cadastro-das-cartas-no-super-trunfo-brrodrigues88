@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+
 
 int main() {
+    int Carta1, Carta2;
+    int opção;
+ 
     //Carta 1
     char Código1[15] = "A01";
     char Estado1[15]= "Paraná";
@@ -39,7 +45,30 @@ int main() {
     printf("Área: %.fkm²\n", Área2);
     printf("PIB: %.f Bilhões\n", PIB2);
     printf("Números de Pontos Turísticos: %d\n", Turismo2);
-    
+    printf("\n"); 
 
-return 0;
+    //Menus Interativo
+    printf("Escolha uma das opções abaixo para comparar as cartas:\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("Digite a opção desejada: ");
+    scanf("%d", &opção);
+
+    //Comparar Cartas População e Área 
+if (População1 > População2) {
+    printf("# Jacarezinho-Pr Venceu! #\n"); 
+} else if (População1 < População2) {
+    printf("# Campinas-Sp Venceu! #\n");
+} else {
+    printf("# Houve um Empate! #\n");
+
+    if (Área1 > Área2) {
+    printf("# Jacarezinho-Pr Venceu! #\n"); 
+} else if (Área1 < Área2) {
+    printf("# Campinas-Sp Venceu! #\n");
+} else {
+    printf("# Houve um Empate! #\n");
+}
+}
+    return 0;
 }
