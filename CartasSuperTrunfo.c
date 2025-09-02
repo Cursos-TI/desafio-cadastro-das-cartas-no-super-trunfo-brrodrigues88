@@ -3,9 +3,8 @@
 
 int main() {
     int Carta1, Carta2;
-    int opção;
-    
- 
+
+
     //Carta 1
     char Código1[15] = "A01";
     char Estado1[15]= "Paraná";
