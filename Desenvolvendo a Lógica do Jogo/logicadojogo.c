@@ -32,7 +32,7 @@ int main() {
     printf("Área: %.2f km²\n", Area1);
     printf("PIB: %.2f Bilhões de reais\n", PIB1);
     printf("Números de Pontos Turísticos: %d\n", Turismo1);
-    printf("Densidade: %.2f hab/km²\n", Densidade1);
+    printf("Densidade Populacional: %.2f hab/km²\n", Densidade1);
     printf("\n");
 
     // Exibir Carta 2 
@@ -44,13 +44,14 @@ int main() {
     printf("Área: %.2f km²\n", Area2);
     printf("PIB: %.2f Bilhões de reais\n", PIB2);
     printf("Números de Pontos Turísticos: %d\n", Turismo2);
-    printf("Densidade: %.2f hab/km²\n", Densidade2);
+    printf("Densidade Populacional: %.2f hab/km²\n", Densidade2);
     printf("\n"); 
 
     // Menu Interativo
     printf("Escolha uma das opções abaixo para comparar as cartas:\n");
     printf("1 - População\n");
     printf("2 - Área\n");
+    printf("3 - Densidade Populacional\n");
     printf("Digite a opção desejada: ");
     scanf("%d", &opcao);
 
@@ -72,10 +73,20 @@ int main() {
         } else {
             printf("# Houve um Empate! #\n");
         }
-    } 
-    else {
-        printf("Opção inválida!\n");
+    }
+    
+    if (opcao == 3) {
+        if (Densidade1 <= Densidade2) {
+            printf("# %s Venceu! #\n", Cidade1);
+        } else if (Densidade2 > Densidade1) {
+            printf("# %s Venceu! #\n", Cidade2);
+        } else {
+            printf("# Houve um Empate! #\n");
+        }
+    } else {
+        printf("Opção inválida\n");
     }
 
+        
     return 0;
 }
