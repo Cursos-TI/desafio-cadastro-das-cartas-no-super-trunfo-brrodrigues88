@@ -58,27 +58,27 @@ int main() {
     // Comparações
     if (opcao == 1) {
         if (Populacao1 > Populacao2) {
-            printf("# %s # Jacarezinho venceu! #\n", Cidade1);
+            printf("# %s venceu! #\n", Cidade1);
         } else if (Populacao2 > Populacao1) {
-            printf("# %s # Campinas venceu! #\n", Cidade2);
+            printf("# %s venceu! #\n", Cidade2);
         } else {
             printf("# Houve um empate! #\n");
         }
     } 
     else if (opcao == 2) {
         if (Area1 > Area2) {
-            printf("# %s # Jacarezinho! #\n", Cidade1);
+            printf("# %s venceu! #\n", Cidade1);
         } else if (Area2 > Area1) {
-            printf("# %s # Campinas! #\n", Cidade2);
+            printf("# %s venceu! #\n", Cidade2);
         } else {
             printf("# Houve um empate! #\n");
         }
     }
     else if (opcao == 3) {
         if (Densidade1 < Densidade2) { 
-            printf("# %s Jacarezinho venceu! #\n", Cidade1);
+            printf("# %s venceu! #\n", Cidade1);
         } else if (Densidade2 < Densidade1) {
-            printf("# %s Campinas venceu! #\n", Cidade2);
+            printf("# %s venceu! #\n", Cidade2);
         } else {
             printf("# Houve um empate! #\n");
         }
