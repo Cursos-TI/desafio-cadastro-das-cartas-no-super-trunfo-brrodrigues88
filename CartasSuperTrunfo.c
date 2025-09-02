@@ -4,6 +4,7 @@
 int main() {
     int Carta1, Carta2;
     int opção;
+    
  
     //Carta 1
     char Código1[15] = "A01";
@@ -13,6 +14,8 @@ int main() {
     float Área1 = 602;
     float PIB1 = 1598109262;
     int Turismo1 = 8;
+    float Densidade1 = População1 / Área1;
+    float PIBperCapita1 = PIB1 / População1;
 
     //Carta 2
     char Código2[15] = "A02";
@@ -22,7 +25,10 @@ int main() {
     float Área2 = 795;
     float PIB2 = 72900000000;
     int Turismo2 = 15;
+    float Densidade2 = População2 / Área2;
+    float PIBperCapita2 = PIB2 / População2;
 
+    
     //Exibir Carta 1
     printf("Carta1\n");
     printf("Código: %s\n", Código1);
@@ -32,6 +38,8 @@ int main() {
     printf("Área: %.fkm²\n", Área1);
     printf("PIB: %.f Bilhões de Reais\n", PIB1);
     printf("Números de Pontos Turísticos: %d\n", Turismo1);
+    printf("Densidade: %.2f hab/km²\n", Densidade1);
+    printf("PIB per Capita: %.2f Reais\n", PIBperCapita1);
     printf("\n");
     
     //Exibir Carta 2 
@@ -43,30 +51,10 @@ int main() {
     printf("Área: %.fkm²\n", Área2);
     printf("PIB: %.f Bilhões de Reais\n", PIB2);
     printf("Números de Pontos Turísticos: %d\n", Turismo2);
+    printf("Densidade: %.2f hab/km²\n", Densidade2);
+    printf("PIB per Capita: %.2f Reais\n", PIBperCapita2);
     printf("\n"); 
 
-    //Menus Interativo
-    printf("Escolha uma das opções abaixo para comparar as cartas:\n");
-    printf("1 - População\n");
-    printf("2 - Área\n");
-    printf("Digite a opção desejada: ");
-    scanf("%d", &opção);
 
-    //Comparar Cartas População e Área 
-if (População1 > População2) {
-    printf("# Jacarezinho-Pr Venceu! #\n"); 
-} else if (População1 < População2) {
-    printf("# Campinas-Sp Venceu! #\n");
-} else {
-    printf("# Houve um Empate! #\n");
-
-    if (Área1 > Área2) {
-    printf("# Jacarezinho-Pr Venceu! #\n"); 
-} else if (Área1 < Área2) {
-    printf("# Campinas-Sp Venceu! #\n");
-} else {
-    printf("# Houve um Empate! #\n");
-}
-}
     return 0;
 }
